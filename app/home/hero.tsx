@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import Button from '@/components/button/page';
+import Link from 'next/link';
 
 export const Hero = () => {
   return (
@@ -30,8 +32,8 @@ export const Hero = () => {
           />
         </div>
         <article className="max-w-[445px]">
-          <h2 className="text-[32px]">About our product line</h2>
-          <p>
+          <h2 className="text-[32px] mb-[22px]">About our product line</h2>
+          <p className="mb-[22px]">
             Dyarmix offers a comprehensive range of specialized chemical
             products for the construction sector, designed to meet the
             requirements of modern projects. Our products are tested in advanced
@@ -39,9 +41,12 @@ export const Hero = () => {
             applications. We also continue to enhance our formulations in line
             with industry trends and customer needs.
           </p>
-          <button className="bg-black text-white py-2 px-4 rounded-full mt-4">
-            Dicover our Products
-          </button>
+          <Link href="/productlist">
+            <Button
+              text={'Discover Our Products'}
+              className="bg-[#DD7A7AAB] hover:bg-[#DD7A7A]"
+            />
+          </Link>
         </article>
       </section>
     </div>

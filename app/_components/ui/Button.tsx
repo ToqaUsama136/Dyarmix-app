@@ -3,7 +3,7 @@ type buttonProps = {
   className: string;
   onClick?: () => void;
 };
-const Button = ({ className, text }: buttonProps) => {
+export default function Button({ className, text }: buttonProps) {
   return (
     <button
       type="submit"
@@ -14,4 +14,4 @@ const Button = ({ className, text }: buttonProps) => {
   );
 };
 
-export default Button;
+

@@ -1,8 +1,8 @@
-import Button from '@/_components/Button';
+import Button from '@/_components/ui/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const Hero = () => {
+export default function Hero() {
   return (
     <div>
       <section className='flex h-[650px] items-center justify-center bg-[url("/images/Landing.jpg")] bg-cover bg-center text-white'>

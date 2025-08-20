@@ -1,8 +1,8 @@
-import Navlinks from '@/_components/Navlinks';
+import Navlinks from '@/_components/ui/Navlinks';
 
 import Image from 'next/image';
 
-const Header = () => {
+export default function Header() {
   return (
     <header className="flex items-center justify-between px-8 py-4">
       <div className="flex items-center">
@@ -22,4 +22,4 @@ const Header = () => {
     </header>
   );
 };
-export default Header;
+

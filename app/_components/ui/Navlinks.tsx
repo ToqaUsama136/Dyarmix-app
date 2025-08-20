@@ -8,7 +8,7 @@ const links = [
   { href: '/aboutus', label: 'About Us' },
   { href: '/contactus', label: 'Contact Us' },
 ];
-const Navlinks = () => {
+export default function Navlinks() {
   return (
     <nav>
       <ul className="hidden space-x-4 px-4 leading-none md:flex">
@@ -22,4 +22,4 @@ const Navlinks = () => {
   );
 };
 
-export default Navlinks;
+

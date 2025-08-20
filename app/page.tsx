@@ -1,10 +1,9 @@
-import Header from '@/header/page';
-import Landing from '@/home/page';
+
+import Landing from '@/_components/home/Landing';
 
 export default function Home() {
   return (
     <main>
-      <Header />
       <Landing />
     </main>
   );

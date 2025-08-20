@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 
 const links = [
@@ -12,7 +11,7 @@ const links = [
 const Navlinks = () => {
   return (
     <nav>
-      <ul className="hidden md:flex  space-x-4  px-4 leading-none ">
+      <ul className="hidden space-x-4 px-4 leading-none md:flex">
         {links.map((link) => (
           <li key={link.href}>
             <Link href={link.href}>{link.label}</Link>

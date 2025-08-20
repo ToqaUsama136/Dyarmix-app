@@ -1,11 +1,10 @@
-import Navlinks from '@/components/navlink/page';
+import Navlinks from '@/_components/Navlinks';
 
 import Image from 'next/image';
-import React from 'react';
 
-export const Header = () => {
+const Header = () => {
   return (
-    <header className="flex items-center  justify-between  px-8 py-4">
+    <header className="flex items-center justify-between px-8 py-4">
       <div className="flex items-center">
         <Image
           src="/images/Dyarmix-Logo.png"
@@ -23,3 +22,4 @@ export const Header = () => {
     </header>
   );
 };
+export default Header;

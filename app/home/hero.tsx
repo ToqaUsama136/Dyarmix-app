@@ -1,12 +1,11 @@
-import React from 'react';
+import Button from '@/_components/Button';
 import Image from 'next/image';
-import Button from '@/components/button/page';
 import Link from 'next/link';
 
 export const Hero = () => {
   return (
     <div>
-      <section className='bg-[url("/images/Landing.jpg")] bg-cover bg-center h-[650px] flex items-center justify-center  text-white  '>
+      <section className='flex h-[650px] items-center justify-center bg-[url("/images/Landing.jpg")] bg-cover bg-center text-white'>
         <article className="max-w-[1110px] text-center">
           <h1 className="text-[35px] sm:text-[48px] md:text-[64px]">
             Bringing Surfaces to Life – Quality that Lasts, Brilliance that
@@ -20,7 +19,7 @@ export const Hero = () => {
         </article>
       </section>
 
-      <section className="flex gap-[100px] items-center justify-center p-[100px] max-h-[445px]">
+      <section className="flex max-h-[445px] items-center justify-center gap-[100px] p-[100px]">
         <div className="max-w-[500px]">
           <Image
             src="/images/aboutland.png"
@@ -32,7 +31,7 @@ export const Hero = () => {
           />
         </div>
         <article className="max-w-[445px]">
-          <h2 className="text-[32px] mb-[22px]">About our product line</h2>
+          <h2 className="mb-[22px] text-[32px]">About our product line</h2>
           <p className="mb-[22px]">
             Dyarmix offers a comprehensive range of specialized chemical
             products for the construction sector, designed to meet the

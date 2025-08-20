@@ -7,9 +7,7 @@ const Button = ({ className, text }: buttonProps) => {
   return (
     <button
       type="submit"
-      className={`rounded-[5px] text-white transition-all 
-                duration-300 ease-out py-[12px] px-[16px] 
-                ${className}`}
+      className={`rounded-[5px] px-[16px] py-[12px] text-white transition-all duration-300 ease-out ${className}`}
     >
       {text}
     </button>

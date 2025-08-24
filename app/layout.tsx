@@ -1,5 +1,6 @@
-import type { Metadata } from 'next';
 import Header from '@/_components/layout/Header';
+import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
 
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -20,8 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main>
-          <Header />
-          {children}
+          <NextIntlClientProvider>
+            <Header />
+            {children}
+          </NextIntlClientProvider>
         </main>
       </body>
     </html>

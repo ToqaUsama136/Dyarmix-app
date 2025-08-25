@@ -20,6 +20,4 @@ export default function Navlinks() {
       </ul>
     </nav>
   );
-};
-
-
+}

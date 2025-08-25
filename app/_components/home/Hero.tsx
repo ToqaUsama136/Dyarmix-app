@@ -34,7 +34,7 @@ export default function Hero() {
           <h2 className="mb-[22px] text-[32px] dark:text-white">
             About our product line
           </h2>
-          <p className="mb-[22px]">
+          <p className="mb-[22px] dark:text-white">
             Dyarmix offers a comprehensive range of specialized chemical
             products for the construction sector, designed to meet the
             requirements of modern projects. Our products are tested in advanced

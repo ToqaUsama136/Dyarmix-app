@@ -19,7 +19,7 @@ export default function Hero() {
         </article>
       </section>
 
-      <section className="flex max-h-[445px] items-center justify-center gap-[100px] p-[100px]">
+      <section className="flex max-h-[445px] items-center justify-center gap-[100px] p-[100px] dark:bg-gray-900">
         <div className="max-w-[500px]">
           <Image
             src="/images/aboutland.png"
@@ -31,8 +31,10 @@ export default function Hero() {
           />
         </div>
         <article className="max-w-[445px]">
-          <h2 className="mb-[22px] text-[32px]">About our product line</h2>
-          <p className="mb-[22px]">
+          <h2 className="mb-[22px] text-[32px] dark:text-white">
+            About our product line
+          </h2>
+          <p className="mb-[22px] dark:text-white">
             Dyarmix offers a comprehensive range of specialized chemical
             products for the construction sector, designed to meet the
             requirements of modern projects. Our products are tested in advanced

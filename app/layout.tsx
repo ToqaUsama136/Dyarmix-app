@@ -1,7 +1,8 @@
 import Header from '@/_components/layout/Header';
+import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
 import ThemeToggleButton from '@/_components/ui/ThemeToggleButton';
 import { getTheme } from '@/_lib/Theme.server';
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -22,9 +23,11 @@ export default async function RootLayout({
     <html className={theme === 'dark' ? 'dark' : ''} lang="en">
       <body className={inter.className}>
         <main>
-          <Header />
-          {children}
-          <ThemeToggleButton currentTheme={theme} />
+          <NextIntlClientProvider>
+            <Header />
+            {children}
+            <ThemeToggleButton currentTheme={theme} />
+          </NextIntlClientProvider>
         </main>
       </body>
     </html>

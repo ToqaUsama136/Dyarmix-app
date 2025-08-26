@@ -12,26 +12,23 @@ export default function ChatAi() {
     const res = await fetch(
       'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
       {
-
         method: 'POST',
         headers: {
           'content-type': 'application/json',
-          'X-goog-api-key': "AIzaSyD1QYF3G9kIJDMQY4HOFj2yWjVvVsBIfFU"
+          'X-goog-api-key': 'AIzaSyD1QYF3G9kIJDMQY4HOFj2yWjVvVsBIfFU',
         },
         body: JSON.stringify({
-          "contents": [
+          contents: [
             {
-              "parts": [
+              parts: [
                 {
-                  "text": question
-                }
-              ]
-            }
-          ]
+                  text: question,
+                },
+              ],
+            },
+          ],
         }),
-      }
-
-
+      },
     );
     const reader = res.body?.getReader();
     const decoder = new TextDecoder();
@@ -41,26 +38,21 @@ export default function ChatAi() {
         const { done, value } = await reader.read();
         if (done) break;
         setAnswer((prev) => prev + decoder.decode(value));
+
       }
     }
   };
 
-
-  //const data = await res.json();
+  // const data = JSON.parse(decoder.decode(value));
   //const answerRes = data.candidates[0].content.parts[0].text
-  //setAnswer(answerRes);
-
-
-
-
-
+  // setAnswer(answerRes);
 
   return (
     <div className="mx-auto mt-10 max-w-xl">
       <form onSubmit={handlSubmit} className="flex">
         <textarea
           onChange={(e) => setQuestion(e.target.value)}
-          className=" border p-2"
+          className="border p-2"
           placeholder="Ask Dyarmix"
           value={question}
         />
@@ -71,4 +63,4 @@ export default function ChatAi() {
       {answer && <p className="mt-4 border p-2">{answer}</p>}
     </div>
   );
-};
+}

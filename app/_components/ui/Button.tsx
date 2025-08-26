@@ -12,4 +12,6 @@ export default function Button({ className, text }: buttonProps) {
       {text}
     </button>
   );
-}
+};
+
+

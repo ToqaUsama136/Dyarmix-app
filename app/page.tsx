@@ -1,10 +1,10 @@
+
 import Landing from '@/_components/home/Landing';
 
-export default async function Home() {
+export default function Home() {
   return (
     <main>
       <Landing />
-
     </main>
   );
 }

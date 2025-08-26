@@ -8,7 +8,6 @@ const links = [
   { href: '/aboutus', label: 'About Us' },
   { href: '/contactus', label: 'Contact Us' },
 ];
-
 export default function Navlinks() {
   return (
     <nav>
@@ -21,4 +20,6 @@ export default function Navlinks() {
       </ul>
     </nav>
   );
-}
+};
+
+

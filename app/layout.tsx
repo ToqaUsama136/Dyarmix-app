@@ -1,7 +1,7 @@
 import Header from '@/_components/layout/Header';
+import ThemeToggleButton from '@/_components/ui/ThemeToggleButton';
 import { getTheme } from '@/_lib/Theme.server';
 import type { Metadata } from 'next';
-
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -24,6 +24,7 @@ export default async function RootLayout({
         <main>
           <Header />
           {children}
+          <ThemeToggleButton currentTheme={theme} />
         </main>
       </body>
     </html>

@@ -1,14 +1,10 @@
 'use client';
-
-import NavLinks from '@/_components/ui/NavLinks';
-import { setLocale } from '@/_lib/setLocale';
-
+import NavLinks from '@/_components/ui/Navlinks';
+import { handleLocale } from '@/_lib/setLocale';
 import Image from 'next/image';
 
 export default function Header() {
-  const handleChange = async (locale: string) => {
-    await setLocale(locale);
-  };
+  const handleChange = (locale: string) => handleLocale(locale);
   return (
     <header className="flex items-center justify-between px-8 py-4">
       <div className="flex items-center">

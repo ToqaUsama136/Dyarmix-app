@@ -1,6 +1,6 @@
 'use client';
+import { setTheme } from '@/_lib/Theme';
 
-import Cookies from 'js-cookie';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
@@ -13,12 +13,10 @@ export default function ToggleButton({ currentTheme }: Props) {
   const router = useRouter();
 
   const toggleMode = () => {
-    const newTheme = darkMode ? 'light' : 'dark';
-    Cookies.set('theme', newTheme, { expires: 365 });
     setDarkMode(!darkMode);
+    setTheme(darkMode ? 'light' : 'dark');
     router.refresh();
   };
-
   return (
     <button
       onClick={toggleMode}

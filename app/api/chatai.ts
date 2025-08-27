@@ -2,7 +2,7 @@ import { GoogleGenAI } from '@google/genai';
 import { Dispatch, SetStateAction } from 'react';
 
 export const ai = new GoogleGenAI({
-  apiKey: 'AIzaSyD1QYF3G9kIJDMQY4HOFj2yWjVvVsBIfFU',
+  apiKey: '',
 });
 
 export const handlSubmit = async (

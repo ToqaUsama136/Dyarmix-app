@@ -22,12 +22,10 @@ export default function Hero() {
       <section className="flex max-h-[445px] items-center justify-center gap-[100px] p-[100px] dark:bg-gray-900">
         <div className="max-w-[500px]">
           <Image
-            src="/images/aboutland.png"
+            src="/images/Union.png"
             alt="Landing"
             width={500}
             height={300}
-            className="object-cover"
-            style={{ clipPath: 'inset(0 round 30%)' }}
           />
         </div>
         <article className="max-w-[445px]">

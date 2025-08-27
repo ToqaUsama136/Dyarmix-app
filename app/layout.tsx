@@ -1,8 +1,9 @@
+import Footer from '@/_components/layout/Footer';
 import Header from '@/_components/layout/Header';
-import type { Metadata } from 'next';
-import { NextIntlClientProvider } from 'next-intl';
 import ThemeToggleButton from '@/_components/ui/ThemeToggleButton';
 import { getTheme } from '@/_lib/Theme.server';
+import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -27,6 +28,7 @@ export default async function RootLayout({
             <Header />
             {children}
             <ThemeToggleButton currentTheme={theme} />
+            <Footer />
           </NextIntlClientProvider>
         </main>
       </body>

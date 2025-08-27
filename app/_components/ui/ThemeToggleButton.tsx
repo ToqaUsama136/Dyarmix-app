@@ -3,7 +3,6 @@ import { handleToggleMode } from '@/_lib/Theme';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
-
 type Props = {
   currentTheme: string;
 };

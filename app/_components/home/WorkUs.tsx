@@ -40,7 +40,7 @@ export default function WorkUs() {
               }}
             ></div>
             <div className="relative z-10">
-              <div className="flex h-[48px] w-[48px] items-center justify-center bg-[#F0F2F5]">
+              <div className="mt-[30px] flex h-[48px] w-[48px] items-center justify-center bg-[#F0F2F5]">
                 {icons[feature.icon]}
               </div>
               <h3 className="text-[18px] font-medium">{feature.title}</h3>

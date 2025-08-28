@@ -38,14 +38,14 @@ export default function Cement() {
           onClick={() => goPrev(setIndex, slides)}
           className="absolute left-12"
         >
-          <AiOutlineLeft className="hidden h-[48px] w-[48px] text-white md:block" />
+          <AiOutlineLeft className="hidden h-[48px] w-[48px] text-white/50 md:block" />
         </button>
 
         <button
           onClick={() => goNext(setIndex, slides)}
           className="absolute right-12"
         >
-          <AiOutlineRight className="hidden h-[48px] w-[48px] text-white md:block" />
+          <AiOutlineRight className="hidden h-[48px] w-[48px] text-white/50 md:block" />
         </button>
       </section>
     </div>

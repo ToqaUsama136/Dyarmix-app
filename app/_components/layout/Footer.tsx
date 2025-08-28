@@ -14,8 +14,8 @@ export default function Footer() {
           <h3 className="medium pb-6 text-[18px]">Useful Links</h3>
           <NavLinks vertical className="space-y-[-2px]" />
         </div>
-        <div className="min-w-[504px]">
-          <h3 className="medium pb-6 text-[18px]">About us</h3>
+        <div className="md:min-w-[504px]">
+          <h3 className="pb-6 text-[18px] font-medium">About us</h3>
           <p>
             Dyarmix has proven itself as a trusted partner for professionals in
             the construction and building sector, thanks to our high-quality

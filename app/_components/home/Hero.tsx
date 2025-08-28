@@ -19,17 +19,18 @@ export default function Hero() {
         </article>
       </section>
 
-      <section className="flex max-h-[445px] items-center justify-center gap-[100px] p-[100px] dark:bg-gray-900">
-        <div className="max-w-[500px]">
+      <section className="flex items-center justify-center gap-[100px] p-[100px] md:max-h-[445px] dark:bg-gray-900">
+        <div className="md:max-w-[500px]">
           <Image
             src="/images/Union.png"
             alt="Landing"
             width={500}
             height={300}
+            className="hidden md:block"
           />
         </div>
-        <article className="max-w-[445px]">
-          <h2 className="mb-[22px] text-[32px] dark:text-white">
+        <article className="min-w-[300px] md:max-w-[445px]">
+          <h2 className="mb-[22px] text-[28px] md:text-[32px] dark:text-white">
             About our product line
           </h2>
           <p className="mb-[22px] dark:text-white">

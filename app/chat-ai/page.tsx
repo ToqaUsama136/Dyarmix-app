@@ -1,16 +1,14 @@
 'use client';
-import { handlSubmit } from '@/api/chatai';
+import { useGenAi } from '@/_hooks/useGenAi';
 import { useState } from 'react';
+
 export default function ChatAi() {
   const [question, setQuestion] = useState('');
-  const [answer, setAnswer] = useState('');
+  const { answer, handleSubmit } = useGenAi();
 
   return (
     <div className="mx-auto mt-10 max-w-xl">
-      <form
-        onSubmit={(e) => handlSubmit(e, question, setAnswer)}
-        className="flex"
-      >
+      <form onSubmit={handleSubmit} className="flex">
         <textarea
           onChange={(e) => setQuestion(e.target.value)}
           className="border p-2"

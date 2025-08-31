@@ -8,11 +8,11 @@ export default function About() {
         <Image
           src="/images/Component 2.png"
           alt="style"
-          width={1920}
+          width={3000}
           height={1920}
         />
       </div>
-      <div className="mx-w-[1320px] relative z-10 container grid grid-cols-1 items-center gap-[200px] px-[100px] py-[80px] lg:grid-cols-2">
+      <div className="relative z-10 container grid max-w-[2500px] grid-cols-1 items-center gap-[200px] px-[100px] py-[80px] lg:grid-cols-2">
         <article className="max-w-[430px] p-[10px]">
           <h2 className="mt-[10px] text-[44px] font-medium">Who we are</h2>
           <h3 className="mt-[10px] text-[29px] font-medium">
@@ -33,7 +33,7 @@ export default function About() {
             className="z-10 mt-[10px] bg-[#DD7A7A] hover:bg-[#DD7A7AAB]"
           />
         </article>
-        <div className="z-10 flex max-w-[575px] flex-col items-center gap-8 lg:items-start">
+        <div className="z-10 flex flex-col items-center gap-8">
           <Image
             src="/images/About.jpg"
             alt="colors"
@@ -41,7 +41,7 @@ export default function About() {
             height={280}
             className="rounded-[10px] object-cover"
           />
-          <div className="-ml-[35px] hidden items-center gap-12 font-light md:flex">
+          <div className="hidden items-center gap-12 font-light md:flex">
             <div>
               <p className="text-[80px]">15+</p>
               <p className="text-[20px]">Clients</p>

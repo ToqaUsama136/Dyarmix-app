@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import CardsServices from './CardsServices';
 import NavigateCustomer from './NavigateCustomer';
+import Partener from './Partener';
 
 export default function Hero() {
   return (
@@ -13,6 +14,7 @@ export default function Hero() {
       />
       <CardsServices />
       <NavigateCustomer />
+      <Partener />
     </section>
   );
 }

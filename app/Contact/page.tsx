@@ -84,7 +84,7 @@ export default function Contact() {
           </form>
         </div>
         <div className="space-y-4 px-[10px] md:px-[130px]">
-          <h2 className="font-[18px] font-medium">Dyarmix</h2>
+          <h2 className="font-medium">Dyarmix</h2>
           <div className="flex items-start gap-2">
             <IoLocationSharp className="flex-shrink-0" />{' '}
             <span>

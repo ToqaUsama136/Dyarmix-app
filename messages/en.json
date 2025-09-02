@@ -1,5 +1,40 @@
 {
   "Home": {
     "title": "Hello world!"
-  }
+  },
+  "project": [
+    {
+      "title": "National Housing Projects",
+      "desc1": "●    Social Housing Project – New Urban Communities Authority",
+      "desc2": "●    Sakan Misr in Shorouk"
+    },
+    {
+      "title": "New Administrative Capital Projects",
+      "desc1": "●       Retired Officers Compound in the New Administrative Capital",
+      "desc2": "●       Al-Fidaa Compound in the New Administrative Capital"
+    },
+    {
+      "title": "Mountain View Projects",
+      "desc1": "●       Mountain View Compound in New Cairo",
+      "desc2": "●       Mountain View Compound in October"
+    },
+    {
+      "title": "Mountain View Projects"
+    },
+    {
+      "title": "Mountain View Projects"
+    },
+    {
+      "title": "Mountain View Projects"
+    },
+    {
+      "title": "Mountain View Projects"
+    },
+    {
+      "title": "Mountain View Projects"
+    },
+    {
+      "title": "Mountain View Projects"
+    }
+  ]
 }

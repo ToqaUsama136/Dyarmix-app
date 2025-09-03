@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import CardsProject from './_components/CardsProject';
 import Hero from './_components/Hero';
 
 export default function Projects() {
@@ -12,6 +13,7 @@ export default function Projects() {
         className="h-auto w-full"
       />
       <Hero />
+      <CardsProject />
     </main>
   );
 }

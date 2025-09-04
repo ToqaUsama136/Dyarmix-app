@@ -1,0 +1,25 @@
+'use client';
+import { useGenAi } from '@/_hooks/useGenAi';
+import { useState } from 'react';
+
+export default function ChatAi() {
+  const [question, setQuestion] = useState('');
+  const { answer, handleSubmit } = useGenAi();
+
+  return (
+    <div className="mx-auto mt-10 max-w-xl">
+      <form onSubmit={handleSubmit} className="flex">
+        <textarea
+          onChange={(e) => setQuestion(e.target.value)}
+          className="border p-2"
+          placeholder="Ask Dyarmix"
+          value={question}
+        />
+        <button className="bg-black px-4 text-white" type="submit">
+          Send
+        </button>
+      </form>
+      {answer && <p className="mt-4 border p-2">{answer}</p>}
+    </div>
+  );
+}

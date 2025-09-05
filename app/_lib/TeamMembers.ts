@@ -1,0 +1,37 @@
+export type Member = {
+  name: string;
+  title: string;
+  image: string;
+  description: string;
+};
+
+export const TeamMembers: Member[] = [
+  {
+    name: 'Tony Fred',
+    title: 'Chief Executive Officer',
+    image: '/images/team1.jpg',
+    description:
+      'Founder and CEO, John, is the driving force behind the company. He has a passion for creating innovative and sustainable paint products that meet the needs of our customers. John is committed to providing the best customer experience and ensuring that our products exceed expectations.',
+  },
+  {
+    name: 'Emily Carter',
+    title: 'Chief Marketing Officer',
+    image: '/images/team2.jpg',
+    description:
+      'As our Chief Commercial Officer, Sarah brings a wealth of experience in the paint industry. She is dedicated to ensuring that our products are accessible to customers worldwide and that we continue to innovate and lead the market.',
+  },
+  {
+    name: 'Aline Turner',
+    title: 'Chief Product Officer',
+    image: '/images/team3.jpg',
+    description:
+      'As our Chief Technical Officer, Mark is responsible for developing our range of paint additives. Mark has extensive experience in the paint industry and is committed to creating products that are environmentally friendly and sustainable.',
+  },
+  {
+    name: 'Iris Joe',
+    title: 'Chief Financial Officer',
+    image: '/images/team4.jpg',
+    description:
+      'Our team of experienced chemists and technicians work tirelessly to create high-quality paints that meet the needs of our customers. We are committed to providing exceptional products and services that exceed expectations.',
+  },
+];

@@ -1,18 +1,11 @@
 import Image from 'next/image';
-import en from '../../../messages/en.json';
+import { Project, ProjectItem } from '../../_lib/Project';
 
-type ProjectItem = {
-  image: string;
-  title: string;
-  desc1: string;
-  desc2: string;
-};
 export default function CardsProject() {
-  const project = en.project as ProjectItem[];
   return (
     <section className="px-[80px] py-[35px]">
       <div className="grid grid-cols-1 items-center gap-2 md:grid-cols-2 lg:grid-cols-3">
-        {project.map((item, index) => (
+        {Project.map((item: ProjectItem, index) => (
           <div
             key={index}
             className="flex h-[423px] w-[416px] flex-col items-center rounded-[6.4px] border border-[#21252926] px-8 py-2"

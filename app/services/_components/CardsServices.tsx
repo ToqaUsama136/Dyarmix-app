@@ -1,17 +1,10 @@
+import { CardServices, ServiceItem } from '@/_lib/CardServices';
 import Image from 'next/image';
-import en from '../../../messages/en.json';
-
-type ServiceItem = {
-  image: string;
-  title: string;
-  desc: string;
-};
 
 export default function CardsServices() {
-  const services: ServiceItem[] = en.services;
   return (
     <div className="grid grid-cols-1 gap-1 px-[50px] py-[35px] md:grid-cols-3">
-      {services.map((service, index) => (
+      {CardServices.map((service: ServiceItem, index) => (
         <div
           key={index}
           className="w-[416px] justify-items-center rounded-[6.4px] border border-[#21252926] p-[15px]"

@@ -1,13 +1,13 @@
-import { CardServices, ServiceItem } from '@/_lib/CardServices';
+import { cardServices, ServiceItem } from '@/_lib/cardServices';
 import Image from 'next/image';
 
 export default function CardsServices() {
   return (
-    <div className="grid grid-cols-1 gap-1 px-[50px] py-[35px] md:grid-cols-3">
-      {CardServices.map((service: ServiceItem, index) => (
+    <div className="grid grid-cols-1 gap-1 px-[20px] py-[35px] md:grid-cols-3 md:px-[50px]">
+      {cardServices.map((service: ServiceItem, index) => (
         <div
           key={index}
-          className="w-[416px] justify-items-center rounded-[6.4px] border border-[#21252926] p-[15px]"
+          className="w-[370px] rounded-[6.4px] border border-[#21252926] p-[15px] md:w-[416px] md:justify-items-center"
         >
           <Image
             src={service.image}
@@ -17,7 +17,7 @@ export default function CardsServices() {
           />
           <div className="pl-[25px] text-[#212529]">
             <p className="py-2 text-[18px] font-medium">{service.title}</p>
-            <p className="w-[377px] p-2">{service.desc}</p>
+            <p className="p-2 md:w-[377px]">{service.desc}</p>
           </div>
         </div>
       ))}

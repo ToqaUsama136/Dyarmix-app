@@ -6,11 +6,11 @@ type Props = {
 };
 const links = [
   { href: '/', label: 'Home' },
-  { href: '/product', label: 'Products' },
+  { href: '/product-list', label: 'Products' },
   { href: '/services', label: 'Services' },
   { href: '/projects', label: 'Projects' },
-  { href: '/aboutus', label: 'About Us' },
-  { href: '/contactus', label: 'Contact Us' },
+  { href: '/about-us', label: 'About Us' },
+  { href: '/contact', label: 'Contact Us' },
 ];
 
 export default function NavLinks({ className = '', vertical = false }: Props) {

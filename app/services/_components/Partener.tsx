@@ -1,7 +1,7 @@
 export default function Partener() {
   return (
     <div className="px-[25px] py-[50px]">
-      <article className="items-center px-[100px] text-center">
+      <article className="items-center px-[20px] text-center md:px-[100px]">
         <h2 className="pb-[10px] text-[34px] font-medium">
           Partners and testimonials
         </h2>

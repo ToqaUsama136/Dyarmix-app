@@ -9,7 +9,7 @@ export default async function Pages({
 }) {
   const { id } = await params;
   return (
-    <main>
+    <main className="mb-10">
       <div className="flex justify-between gap-[300px] px-16 md:gap-0">
         <div className="py-2">
           <Link href="#">AllProducts / {id}</Link>

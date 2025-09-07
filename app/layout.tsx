@@ -1,3 +1,4 @@
+import Footer from '@/_components/layout/Footer';
 import Header from '@/_components/layout/Header';
 import ThemeToggleButton from '@/_components/ui/ThemeToggleButton';
 import { getTheme } from '@/_lib/Theme.server';
@@ -27,6 +28,7 @@ export default async function RootLayout({
             <Header />
             {children}
             <ThemeToggleButton currentTheme={theme} />
+            <Footer />
           </NextIntlClientProvider>
         </main>
       </body>

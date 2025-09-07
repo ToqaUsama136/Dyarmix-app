@@ -2,43 +2,64 @@
   "Home": {
     "title": "Hello world!"
   },
-
-  "services": [
+  "slider": [
     {
-      "image": "/images/Services1.png",
-      "title": "Vibrant Color Selection",
-      "desc": "Customize these three sections to showcase your paint products. To duplicate, delete, or move sections, select the section and use the top icons to perform your action."
+      "image": "images/slide1.jpg",
+      "title": "Cement Paints",
+      "content": "Dyar Mix offers a range of high-quality cement paints designed to withstand harsh environmental conditions, ensuring effective protection for surfaces used in construction and finishing projects. Our products are characterized by their easy application and durability, making them ideal for both interior and exterior surfaces."
     },
     {
-      "image": "/images/services2.png",
-      "title": "Eco-Friendly Paints",
-      "desc": "To add a fourth section, reduce the size of these three sections using the right icon of each block.Then, duplicate one of the sections to create a new one as a copy."
+      "image": "images/slide2.jpg",
+      "title": "Acrylic Paints",
+      "content": "At Dyarmix, we offer high-quality acrylic paints with excellent coverage and a distinctive surface finish. Thanks to their high resistance to weather conditions, these paints are suitable for all interior or exterior projects."
     },
     {
-      "image": "/images/services3.png",
-      "title": "Durable Finishes",
-      "desc": "Delete the above image or replace it with apicture that illustrates your message.Click on the picture to change its rounded corner style."
+      "image": "images/slide2.jpg",
+      "title": "Ceramic and Marble Adhesives",
+      "content": "Dyarmix ceramic and marble adhesives are known for their ability to provide strong and durable bonding. Our products are designed to suit all types of surfaces, making them the ideal choice for ceramic and marble installation in residential and commercial projects."
+    },
+    {
+      "image": "images/slide2.jpg",
+      "title": "Additives and Surface Sealers",
+      "content": "Dyarmix offers specialized additives for mortar and sealants that enhance the quality of construction work and increase the surfaces' resistance to moisture and weather conditions. These materials are designed to improve surface durability and extend their lifespan in construction projects."
+    },
+    {
+      "image": "images/slide3.jpg",
+      "title": "Surface Smoothing and Preparation Compounds",
+      "content": "Our cement-based Surface Smoothing and Preparation Compounds provide ideal solutions for smoothing and preparing surfaces before painting, ensuring a smooth and uniform appearance. These filters are perfect for use on all types of surfaces and deliver professional results in both interior and exterior finishing projects."
     }
   ],
 
-  "customers": [
+  "feature": [
     {
-      "content": "Our customers rave about the quality and vibrancy of our paints. They truly transform spaces!",
-      "image": "/image/customer11.jpg",
-      "title": "Jane DOE",
-      "desc": "CEO of Paint Division"
+      "image": "images/work1.png",
+      "icon": "PiTelegramLogo",
+      "title": "Extensive Experience",
+      "content": "Over a decade of experience in the construction chemical sector.."
     },
     {
-      "content": "Our customers rave about the quality and vibrancy of our paints. They truly transform spaces!",
-      "image": "/image/customer22.jpg",
-      "title": "John DOE",
-      "desc": "CEO of Paint Division"
+      "image": "images/work2.png",
+      "icon": "FaRegCreditCard",
+      "title": "Certified Quality",
+      "content": "Our products undergo stringent testing and comply with international standards."
     },
     {
-      "content": "Our customers rave about the quality and vibrancy of our paints. They truly transform spaces!",
-      "image": "/image/customer33.jpg",
-      "title": "Iris DOE",
-      "desc": "Manager of Paint Division"
+      "image": "images/work3.png",
+      "icon": "PiTelegramLogo",
+      "title": "Customer Focus",
+      "content": "We offer after-sales support services to ensure customer satisfaction."
+    },
+    {
+      "image": "images/work3.png",
+      "icon": "FaRegCreditCard",
+      "title": "Specialized Team",
+      "content": "Experienced engineers, chemists, and administrators guarantee the highest quality standards."
+    },
+    {
+      "image": "images/work3.png",
+      "icon": "PiTelegramLogo",
+      "title": "Continuous Development",
+      "content": "We strive to keep up with developments in the construction sector to continually improve our products."
     }
   ]
 }

@@ -13,7 +13,7 @@ export default function Form() {
         <div>
           <label className="block">Role</label>
           <select className="focus:ring-bg-[#21252926] block h-[30px] w-full rounded-[5px] border border-[#21252926] bg-white focus:text-black focus:outline-none">
-            <option disabled selected className="text-[#21252926]">
+            <option disabled className="text-[#21252926]">
               I Am A.....
             </option>
             <option>Contracting Company</option>

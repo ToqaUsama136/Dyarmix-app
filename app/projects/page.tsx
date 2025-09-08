@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import CardsProject from './_components/CardsProject';
+import EgyptionProject from './_components/EgyptionProject';
 import Hero from './_components/Hero';
 import ProjectNav from './_components/ProjectNav';
 
@@ -15,6 +16,7 @@ export default function Projects() {
       />
       <Hero />
       <ProjectNav />
+      <EgyptionProject />
       <CardsProject />
     </main>
   );

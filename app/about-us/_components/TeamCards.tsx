@@ -1,4 +1,4 @@
-import { Member, TeamMembers } from '../../_lib/TeamMembers';
+import { Member, TeamMembers } from '../../_lib/teamMembers';
 import CardAbout from './CardAbout';
 
 export default function TeamCards() {

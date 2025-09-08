@@ -2,7 +2,7 @@
 import ButtonLeft from '@/_components/ui/ButtonLeft';
 import ButtonRight from '@/_components/ui/ButtonRight';
 import { useIndexer } from '@/_hooks/useIndexer';
-import { Customers } from '@/_lib/Customers';
+import { Customers } from '@/_lib/customers';
 import Image from 'next/image';
 import { FaQuoteRight } from 'react-icons/fa6';
 export default function NavigateCustomer() {

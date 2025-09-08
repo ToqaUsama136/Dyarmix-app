@@ -8,13 +8,20 @@ import Image from 'next/image';
 export default function ProjectNav() {
   const { currentItem: project, goPrev, goNext } = useIndexer(projectNav);
   return (
-    <div>
-      <div>
-        <Image src={project.image} alt="picture" width={350} height={350} />
+    <section className="py-[20px]">
+      <div className="relative w-full bg-gray-100">
+        <div className="relative flex items-center justify-center">
+          <Image src={project.image} alt="picture" width={500} height={456} />
+          <ButtonRight
+            goNext={goNext}
+            className="rounded-[6.5px] md:bg-gray-300"
+          />
+          <ButtonLeft
+            goPrev={goPrev}
+            className="rounded-[6.5px] md:bg-gray-300"
+          />
+        </div>
       </div>
-
-      <ButtonRight goNext={goNext} />
-      <ButtonLeft goPrev={goPrev} />
-    </div>
+    </section>
   );
 }

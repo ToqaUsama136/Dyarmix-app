@@ -1,4 +1,4 @@
-import { DataProduct, Product } from '../../../_lib/DataProduct';
+import { DataProduct, Product } from '../../../_lib/dataProduct';
 import CardPage from './CardPage';
 
 export default function Cards() {

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Product, productList } from '../../_lib/DataProductList';
+import { Product, productList } from '../../_lib/dataProductList';
 
 export default function CardsProduct() {
   return (

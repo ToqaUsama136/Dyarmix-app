@@ -1,7 +1,7 @@
 import Footer from '@/_components/layout/Footer';
 import Header from '@/_components/layout/Header';
 import ThemeToggleButton from '@/_components/ui/ThemeToggleButton';
-import { getTheme } from '@/_lib/Theme.server';
+import { getTheme } from '@/_lib/theme.server';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { Inter } from 'next/font/google';

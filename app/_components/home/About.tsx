@@ -12,8 +12,8 @@ export default function About() {
           height={1920}
         />
       </div>
-      <div className="relative z-10 container grid max-w-[2500px] grid-cols-1 items-center gap-[200px] px-[100px] py-[80px] lg:grid-cols-2">
-        <article className="max-w-[430px] p-[10px]">
+      <div className="px:[50px] relative z-10 container grid grid-cols-1 items-center gap-[200px] py-[80px] md:w-[2500px] md:px-[100px] lg:grid-cols-2">
+        <article className="p-[10px] md:w-[430px]">
           <h2 className="mt-[10px] text-[44px] font-medium">Who we are</h2>
           <h3 className="mt-[10px] text-[29px] font-medium">
             A team of industry experts, passionate about new technologies &

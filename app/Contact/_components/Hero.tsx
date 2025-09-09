@@ -6,7 +6,7 @@ import Form from './Form';
 export default function Hero() {
   return (
     <div className="grid grid-cols-1 gap-40 px-8 py-[25px] md:items-start md:px-[60px] lg:grid-cols-2">
-      <div className="w-[740px]">
+      <div className="w-[380px] md:w-[740px]">
         <p className="text-[18px] font-light">
           For more information on how we can support your project, feel free to
           contact our team. At DyarMix, we are committed to providing the best
@@ -16,7 +16,7 @@ export default function Hero() {
 
         <Form />
       </div>
-      <div className="space-y-4 px-[10px] md:px-[130px]">
+      <div className="px-[10px] pt-[140px] md:space-y-4 md:px-[130px] md:py-0">
         <h2 className="font-medium">Dyarmix</h2>
         <div className="flex items-start gap-2">
           <IoLocationSharp className="flex-shrink-0" />{' '}

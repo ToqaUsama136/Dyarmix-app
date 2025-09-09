@@ -1,5 +1,5 @@
 'use client';
-import { handleToggleMode } from '@/_lib/Theme';
+import { handleToggleMode } from '@/_lib/theme';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 

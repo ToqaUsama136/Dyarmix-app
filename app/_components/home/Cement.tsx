@@ -1,22 +1,17 @@
 'use client';
 import { useIndexer } from '@/_hooks/useIndexer';
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
-import en from '../../../messages/en.json';
+import { slider } from '@/_lib/slider';
 import Button from '../ui/Button';
+import ButtonLeft from '../ui/ButtonLeft';
+import ButtonRight from '../ui/ButtonRight';
 
-interface Slide {
-  title: string;
-  content: string;
-  image: string;
-}
 export default function Cement() {
-  const { slider } = en as { slider: Slide[] };
   const {
     index,
     currentItem: slide,
     isLastSide,
-    goNext,
     goPrev,
+    goNext,
   } = useIndexer(slider);
 
   return (
@@ -38,23 +33,14 @@ export default function Cement() {
               Weather-Resistant Acrylic Paints
             </h4>
           )}
-          <p className="ml-10 max-w-[350] text-center md:hidden">
+          <p className="ml-10 max-w-[350px] text-center md:hidden">
             {slide.content}
           </p>
           <p className="hidden md:block">{slide.content}</p>
           <Button text={'Learn More...'} className="my-[22px] bg-[#0A58CA]" />
         </article>
-
-        <button onClick={() => goPrev()} className="absolute left-0 md:left-12">
-          <AiOutlineLeft className="h-[48px] w-[48px] text-white/70" />
-        </button>
-
-        <button
-          onClick={() => goNext()}
-          className="absolute right-0 md:right-12"
-        >
-          <AiOutlineRight className="h-[48px] w-[48px] text-white/70" />
-        </button>
+        <ButtonLeft goPrev={goPrev} />
+        <ButtonRight goNext={goNext} />
       </section>
     </div>
   );

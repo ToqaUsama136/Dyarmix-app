@@ -1,4 +1,4 @@
-'useClient';
+'use client';
 import { useState } from 'react';
 
 export function useIndexer<T>(data: T[]) {

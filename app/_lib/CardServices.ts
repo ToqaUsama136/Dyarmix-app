@@ -4,7 +4,7 @@ export type ServiceItem = {
   desc: string;
 };
 
-export const CardServices: ServiceItem[] = [
+export const cardServices: ServiceItem[] = [
   {
     image: '/images/Services1.png',
     title: 'Vibrant Color Selection',

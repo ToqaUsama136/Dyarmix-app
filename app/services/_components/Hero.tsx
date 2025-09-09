@@ -9,7 +9,7 @@ export default function Hero() {
       <Image
         src="/images/Services.png"
         alt="services"
-        width={1540}
+        width={1940}
         height={100}
       />
       <CardsServices />

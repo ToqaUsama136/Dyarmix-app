@@ -1,5 +1,5 @@
 'use client';
-import NavLinks from '@/_components/ui/Navlinks';
+import NavLinks from '@/_components/ui/NavLinks';
 import { handleLocale } from '@/_lib/setLocale';
 import Image from 'next/image';
 

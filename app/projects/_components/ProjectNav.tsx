@@ -2,7 +2,7 @@
 import ButtonLeft from '@/_components/ui/ButtonLeft';
 import ButtonRight from '@/_components/ui/ButtonRight';
 import { useIndexer } from '@/_hooks/useIndexer';
-import { projectNav } from '@/_lib/projectNav';
+import { projectNav } from '@/_lib/project-nav';
 import Image from 'next/image';
 
 export default function ProjectNav() {

@@ -5,7 +5,7 @@ export type custom = {
   title: string;
   desc: string;
 };
-export const Customers: custom[] = [
+export const customers: custom[] = [
   {
     imagebg: '/images/customer1.jpg',
     content:

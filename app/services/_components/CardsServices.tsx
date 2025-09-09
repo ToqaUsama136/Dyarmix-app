@@ -1,4 +1,4 @@
-import { cardServices, ServiceItem } from '@/_lib/cardServices';
+import { cardServices, ServiceItem } from '@/_lib/card-services';
 import Image from 'next/image';
 
 export default function CardsServices() {

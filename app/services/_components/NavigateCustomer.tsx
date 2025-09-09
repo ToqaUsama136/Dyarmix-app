@@ -2,11 +2,11 @@
 import ButtonLeft from '@/_components/ui/ButtonLeft';
 import ButtonRight from '@/_components/ui/ButtonRight';
 import { useIndexer } from '@/_hooks/useIndexer';
-import { Customers } from '@/_lib/customers';
+import { customers } from '@/_lib/customers';
 import Image from 'next/image';
 import { FaQuoteRight } from 'react-icons/fa6';
 export default function NavigateCustomer() {
-  const { currentItem: custom, goPrev, goNext } = useIndexer(Customers);
+  const { currentItem: custom, goPrev, goNext } = useIndexer(customers);
   return (
     <div
       className="relative h-full w-full bg-cover bg-center"

@@ -1,6 +1,6 @@
 'use client';
-import NavLinks from '@/_components/ui/Navlinks';
-import { handleLocale } from '@/_lib/setLocale';
+import NavLinks from '@/_components/ui/NavLinks';
+import { handleLocale } from '@/_lib/set-locale';
 import Image from 'next/image';
 
 export default function Header() {

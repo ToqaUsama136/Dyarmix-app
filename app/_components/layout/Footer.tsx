@@ -1,4 +1,4 @@
-import NavLinks from '@/_components/ui/Navlinks';
+import NavLinks from '@/_components/ui/NavLinks';
 import { MdEmail, MdOutlineContactSupport, MdPhone } from 'react-icons/md';
 import SocialLinks from '../ui/SocialLinks';
 export default function Footer() {

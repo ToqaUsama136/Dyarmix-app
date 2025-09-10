@@ -11,13 +11,18 @@ type NextApiResponseWithSocket = NextApiResponse & {
     };
   };
 };
-const SocketHandler = (req: NextApiRequest, res: NextApiResponseWithSocket) => {
+const SocketHandler = (
+  _req: NextApiRequest,
+  res: NextApiResponseWithSocket,
+) => {
   if (res.socket.server.io) {
     console.log('Socket is already running.');
   } else {
     console.log('Socket is initializing...');
 
-    const io = new IOServer(res.socket.server);
+    const io = new IOServer(res.socket.server, {
+      path: '/api/socket_io',
+    });
     res.socket.server.io = io;
 
     io.on('connection', (socket) => {
